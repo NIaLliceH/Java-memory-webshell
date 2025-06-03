@@ -9,7 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1407cef7-e455-42f7-a7d6-b3c7de294abb" name="Changes" comment="" />
+    <list default="true" id="1407cef7-e455-42f7-a7d6-b3c7de294abb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/demo-shell/memshell_filter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vdt/TestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/debug_memshell_filter.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-shell/webshell_runtime.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/demo-shell/webshell_runtime.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vdt/EvilFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vdt/EvilFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vdt/EvilListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vdt/EvilListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vdt/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vdt/UploadServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/memshell_listener.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/debug_memshell_listener.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +33,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -59,8 +73,11 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 10.executor": "Debug",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 10.executor": "Run",
     "Tomcat Server.Tomcat 9.0.105.executor": "Run",
+    "git-widget-placeholder": "filter",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/Workspace/Java/JavaMemShell/src/main/webapp",
     "node.js.detected.package.eslint": "true",
@@ -81,6 +98,7 @@
       <recent name="D:\Workspace\Java\JavaMemShell\shell" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Java\JavaMemShell" />
       <recent name="D:\Workspace\Java\JavaMemShell\shell" />
     </key>
   </component>
@@ -97,15 +115,6 @@
         <option name="DEBUG_PORT" value="5005" />
         <option name="LOCAL" value="false" />
       </RunnerSettings>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <option name="AUTO_RESTART" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 10" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10" ALTERNATIVE_JRE_ENABLED="false">
@@ -222,33 +231,25 @@
       <workItem from="1748847358150" duration="1219000" />
       <workItem from="1748850563456" duration="3152000" />
       <workItem from="1748854168374" duration="531000" />
-      <workItem from="1748854761308" duration="24331000" />
+      <workItem from="1748854761308" duration="28332000" />
+      <workItem from="1748893380766" duration="298000" />
+      <workItem from="1748893692989" duration="16188000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vdt/UploadServlet.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vdt/EvilListener.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/memshell_listener.jsp</url>
-          <line>9</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

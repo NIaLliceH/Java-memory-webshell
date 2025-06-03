@@ -11,7 +11,7 @@ import jakarta.servlet.http.Part;
 import java.io.File;
 import java.io.IOException;
 
-@WebServlet(name = "upload", value = "/upload")
+@WebServlet("/upload")
 @MultipartConfig
 public class UploadServlet extends HttpServlet {
     @Override
