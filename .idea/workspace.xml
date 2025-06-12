@@ -10,17 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1407cef7-e455-42f7-a7d6-b3c7de294abb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-shell/memshell_servlet.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vdt/EvilServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/debug_memshell_servlet.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-shell/memshell_class.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-shell/webshell_class.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-shell/memshell_filter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/demo-shell/memshell_filter.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-shell/memshell_listener.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/demo-shell/memshell_listener.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vdt/EvilFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vdt/EvilFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vdt/EvilListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vdt/EvilListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vdt/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vdt/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vdt/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vdt/UploadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +49,11 @@
         <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -76,9 +75,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 10.executor": "Debug",
+    "Tomcat Server.Tomcat 10.executor": "Run",
     "Tomcat Server.Tomcat 9.0.105.executor": "Run",
-    "git-widget-placeholder": "servlet",
+    "git-widget-placeholder": "processor",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/Workspace/Java/JavaMemShell/src/main/webapp/WEB-INF",
     "node.js.detected.package.eslint": "true",
@@ -88,8 +87,8 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.50302297",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "project.structure.side.proportion": "0.40034965",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -259,6 +258,9 @@
       <workItem from="1749541916025" duration="113000" />
       <workItem from="1749542332515" duration="9356000" />
       <workItem from="1749654195680" duration="22165000" />
+      <workItem from="1749746018510" duration="296000" />
+      <workItem from="1749746355166" duration="90000" />
+      <workItem from="1749746456984" duration="10448000" />
     </task>
     <servers />
   </component>
@@ -275,6 +277,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vdt/HelloServlet.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vdt/HelloServlet.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
