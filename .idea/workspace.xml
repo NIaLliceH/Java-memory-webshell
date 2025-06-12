@@ -10,16 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1407cef7-e455-42f7-a7d6-b3c7de294abb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-shell/memshell_filter.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vdt/TestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/debug_memshell_filter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-shell/memshell_servlet.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vdt/EvilServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/debug_memshell_servlet.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-shell/webshell_runtime.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/demo-shell/webshell_runtime.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-shell/memshell_filter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/demo-shell/memshell_filter.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-shell/memshell_listener.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/demo-shell/memshell_listener.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vdt/EvilFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vdt/EvilFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vdt/EvilListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vdt/EvilListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vdt/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vdt/HelloServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vdt/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vdt/UploadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/memshell_listener.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/debug_memshell_listener.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,11 +76,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 10.executor": "Run",
+    "Tomcat Server.Tomcat 10.executor": "Debug",
     "Tomcat Server.Tomcat 9.0.105.executor": "Run",
-    "git-widget-placeholder": "filter",
+    "git-widget-placeholder": "servlet",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Workspace/Java/JavaMemShell/src/main/webapp",
+    "last_opened_file_path": "D:/Workspace/Java/JavaMemShell/src/main/webapp/WEB-INF",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -94,10 +95,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Java\JavaMemShell\src\main\webapp\WEB-INF" />
       <recent name="D:\Workspace\Java\JavaMemShell\src\main\webapp" />
       <recent name="D:\Workspace\Java\JavaMemShell\shell" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Java\JavaMemShell\src\main\webapp" />
       <recent name="D:\Workspace\Java\JavaMemShell" />
       <recent name="D:\Workspace\Java\JavaMemShell\shell" />
     </key>
@@ -137,6 +140,9 @@
       <RunnerSettings RunnerId="AppServerDebuggerRunner">
         <option name="DEBUG_PORT" value="54806" />
       </RunnerSettings>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62792" />
+      </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="AppServerDebuggerRunner">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -153,6 +159,21 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
@@ -212,8 +233,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
       </set>
     </attachedChunks>
   </component>
@@ -234,6 +255,10 @@
       <workItem from="1748854761308" duration="28332000" />
       <workItem from="1748893380766" duration="298000" />
       <workItem from="1748893692989" duration="16188000" />
+      <workItem from="1749370203413" duration="3348000" />
+      <workItem from="1749541916025" duration="113000" />
+      <workItem from="1749542332515" duration="9356000" />
+      <workItem from="1749654195680" duration="22165000" />
     </task>
     <servers />
   </component>
