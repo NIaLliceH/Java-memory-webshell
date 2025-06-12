@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.InputStream;
 import java.lang.reflect.Field;
 
-@WebListener
+//@WebListener
 public class EvilListener implements ServletRequestListener {
     @Override
     public void requestInitialized(ServletRequestEvent sre) {

