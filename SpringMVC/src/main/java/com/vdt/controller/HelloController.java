@@ -8,5 +8,6 @@ public class HelloController {
     @GetMapping("/hello")
     public String greet() {
         return "hello"; // specify the view name
+//        return "debug_memshell_interceptor"; // specify the view name
     }
 }
