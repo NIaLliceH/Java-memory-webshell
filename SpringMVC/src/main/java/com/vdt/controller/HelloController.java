@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HelloController {
     @GetMapping("/hello")
     public String greet() {
-        return "hello"; // specify the view name
-//        return "debug_memshell_interceptor"; // specify the view name
+//        return "hello"; // specify the view name
+//        return "debug_memshell_interceptor";
+        return "replace_me";
     }
 }

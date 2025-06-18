@@ -2,16 +2,11 @@
 <%@ page import="java.io.IOException" %>
 <%@ page import="java.io.PrintWriter" %>
 <%@ page import="org.springframework.web.context.WebApplicationContext" %>
-<%@ page import="org.springframework.web.context.support.WebApplicationContextUtils" %>
 <%@ page import="org.springframework.web.servlet.HandlerMapping" %>
-<%@ page import="java.lang.reflect.Method" %>
-<%@ page import="org.springframework.web.servlet.HandlerExecutionChain" %>
 <%@ page import="org.springframework.web.context.request.RequestContextHolder" %>
 <%@ page import="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" %>
-<%@ page import="java.util.Map" %>
 <%@ page import="org.springframework.web.servlet.handler.AbstractHandlerMapping" %>
 <%@ page import="java.lang.reflect.Field" %>
-<%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="org.springframework.web.servlet.handler.MappedInterceptor" %>
 

