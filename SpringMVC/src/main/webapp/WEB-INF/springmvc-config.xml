@@ -23,4 +23,5 @@
         </mvc:interceptor>
     </mvc:interceptors>
     <mvc:annotation-driven />
+    <mvc:resources mapping="/tmp/**" location="/tmp/"/>
 </beans>
